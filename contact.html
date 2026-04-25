@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact – V Cola</title>
+
+<style>
+Body {
+  Margin: 0;
+  Font-family: Arial;
+  Background: linear-gradient(to right, #5bbcff, #2d8cff);
+  Color: white;
+  Text-align: center;
+  padding-top: 40px;
+}
+
+/* Navbar */
+.navbar {
+  Display: flex;
+  Justify-content: center;
+  Gap: 30px;
+  Padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.2);
+}
+
+.navbar a {
+  Color: white;
+  Text-decoration: none;
+  Font-size: 18px;
+}
+
+.navbar a:hover {
+  Color: orange;
+}
+
+/* Section */
+.contact {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  margin-top: 100%;
+}
+
+/* Form */
+Form {
+  Background: rgba(255,255,255,0.1);
+  Padding: 30px;
+  Border-radius: 15px;
+  Width: 300px;
+  Margin: auto;
+}
+
+Input, textarea {
+  Width: 100%;
+  Padding: 12px;
+  Margin: 10px 0;
+  Border: none;
+  Border-radius: 8px;
+}
+
+Button {
+  Padding: 12px;
+  Width: 100%;
+  Background: orange;
+  Border: none;
+  Color: white;
+  Border-radius: 8px;
+  Cursor: pointer;
+}
+
+Button:hover {
+  Background: #ff6a00;
+}
+
+#msg {
+  Margin-top: 15px;
+}
+
+/* Back Button */
+.back-btn {
+  Display: inline-block;
+  Margin-top: 30px;
+  Padding: 10px 20px;
+  Background: white;
+  Color: #333;
+  Text-decoration: none;
+  Border-radius: 8px;
+  position:relative;
+  z-index: 10;
+}
+</style>
+
+</head>
+<body>
+
+<!—Navbar 
+<div class="navbar">
+  <a href="v.html">Home</a>
+  <a href="page2.html">Products</a>
+  <a href="about.html">Newsletter</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!—Contact Section 
+<section class="contact">
+  <h1>Contact Us</h1>
+  <p>Feel free to reach out to us anytime 💬</p>
+
+  <form id="contactForm">
+    <input type="text" Id="name" placeholder="Your Name">
+    <input type="email" Id="email" placeholder="Your Email">
+    <textarea id="message" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p id="msg"></p>
+
+    <!-- زر الرجوع -->
+    <a href="v.html" class="back-btn">⬅ Back to Home</a>
+</section>
+
+<script>
+Document.getElementById("contactForm").addEventListener("submit", function€{
+  e.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+  let msg = document.getElementById("msg");
+
+  if(name === "" || email === "" || message === ""){
+    msg.innerText = "Please fill all fields!";
+    msg.style.color = "red";
+  } else {
+    Msg.innerText = "Message sent successfully 🎉";
+    Msg.style.color = "lightgreen";
+  }
+});
+</script>
+
+</body>
+</html>

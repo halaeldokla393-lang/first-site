@@ -1,0 +1,178 @@
+<html>
+<head>
+    <title>V Cola Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden;
+            font-family: sans-serif;
+        }
+
+        #home {
+            height: 100vh;
+            background-color: dodgerblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            height: 80px;
+        }
+
+        .logo {
+            height: 60px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+
+        .content-text {
+            color: white;
+            max-width: 50%;
+        }
+
+        .content-text h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .content-text h1 span {
+            color: gold;
+        }
+
+        .content-text p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            background: gold;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .content img {
+            height: 300px;
+            animation: fadeInRight 1.2s ease-out;
+        }
+
+        .social {
+            text-align: center;
+            padding: 15px 0;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .social a {
+            color: white;
+            margin: 0 15px;
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        .social a:hover {
+            transform: scale(1.2);
+        }
+
+        /* Animations */
+        @keyframes fadeInRight {
+            from {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(40px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="home">
+        <div class="container">
+            <nav>
+                <img src="v_logo.png" class="logo" alt="Logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="page2.html">Products</a></li>
+                    <li><a href="#">What's New</a></li>
+                    <li><a href="about.html">NewsLetter</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="content-text">
+                    <h1>THAT'S WHAT' <br> <span> I LIKE </span></h1>
+                    <p>V7Egypt, The first carbonated drink with 100% natural flavour, rich in vitamins. 100% Egyptian, exported globally. We have redefined the concept of refreshing drinks.</p>
+                    <a href="page2.html" class="btn">VIEW ALL PRODUCTS</a>
+                </div>
+                <img src="vcola.png" alt="V-Cola">
+            </div>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+</body>
+</html>

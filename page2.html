@@ -1,0 +1,172 @@
+<html>
+<head>
+    <title>V Cola Products Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        body {
+            background-color: #1E90FF;
+            color: white;
+        }
+
+        #home {
+            height: 15vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            max-height: 70px;
+        }
+
+        #products {
+            height: 85vh;
+            background-color: #1E90FF;
+            padding: 10px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #products h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .product-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background-color: white;
+            color: #1E90FF;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            width: 160px;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .product-card:hover {
+            transform: scale(1.03);
+        }
+
+        .product-card img {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .product-info h3 {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .product-info p {
+            font-size: 11px;
+            margin-bottom: 10px;
+            padding: 0 5px;
+        }
+
+        .btn {
+            background-color: #1E90FF;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 12px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #3D8DFF;
+        }
+        .navbar a {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background: rgba(0,0,0,0,2);
+            padding:15px;
+        }
+        .navbara{
+            color:white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .navbar a:hover{
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="home">
+        <img src="v_logo.png" class="logo" alt="Logo">
+    </div>
+<div class="navbar">
+    <a href="v.html">home</a>
+    </div>
+    <div id="products">
+        <h1>OUR PRODUCTS</h1>
+        <div class="product-row">
+            <div class="product-card">
+                <img src="roma.png" alt="V-Cola ROME">
+                <div class="product-info">
+                    <h3>ROMEGRANATE</h3>
+                    <p>Natural and refreshing.</p>
+                    <a href="#" class="btn">BUY NOW</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="pine.png" alt="V-Cola Lime">
+                <div class="product-info">
+                    <h3>PINEAPPLE</h3>
+                    <p>Zesty and full of vitamins.</p>
+                    <a href="#" class="btn">BUY NOW</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="super.png" alt="V-Cola Original">
+                <div class="product-info">
+                    <h3>V-COLA ORIGINAL</h3>
+                    <p>Rich tropical flavor.</p>
+                    <a href="#" class="btn">BUY NOW</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="grecola.png" alt="V-Cola Berry">
+                <div class="product-info">
+                    <h3>BLUEBERRY</h3>
+                    <p>Sweet and refreshing.</p>
+                    <a href="#" class="btn">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
